@@ -19,16 +19,18 @@
             background-color: #000;
         }
                 
-        #svgContainer {
+        #animation {
             max-width: 100%;
             max-height: 100%;
+            height: 50%;
+            width: 50%;
+            margin: auto;
             background-color: #000;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            margin: auto;
         }
     </style>
 </head>
@@ -43,8 +45,10 @@
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: 'https://raw.githubusercontent.com/twentythreetea/lottie-example/main/Comp_1.json' // the path to the animation json
+            path: 'https://raw.githubusercontent.com/sutekina/sutekina-animations/main/loading_dots.json' // the path to the animation json
         }); 
     </script>
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://raw.githubusercontent.com/twentythreetea/lottie-example/main/Comp_1.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player> -->
 </body>
 </html>
