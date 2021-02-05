@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottie YOOO POG</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+        }
+                
+        #svgContainer {
+            max-width: 100%;
+            max-height: 100%;
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="animation">
+
+    </div>
+    <script src="node_modules/lottie-web/build/player/lottie.js" type="text/javascript"></script>
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById("animation"), // the dom element that will contain the animation
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://raw.githubusercontent.com/twentythreetea/lottie-example/main/Comp_1.json' // the path to the animation json
+        }); 
+    </script>
+</body>
+</html>
